@@ -1,0 +1,16 @@
+{
+   "SQL": {
+    "host": "sql3.freemysqlhosting.net",
+    "database": "sql3269019",
+    "user": "sql3269019",
+    "password": "CmhMEwfQ2x"
+  },
+   "SERVERMODE": {
+    "game": "no",
+    "other": "yes"
+  },
+  "serverConfig": {
+    "srvPrefix": "",
+    "playerState": "",
+  }
+}

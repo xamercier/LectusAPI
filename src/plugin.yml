@@ -1,0 +1,22 @@
+name: LectusAPI
+version: 3.0
+authors: [xamercier, com002]
+main: net.lectusAPI.MainLectusApi
+depend: [LectusHALSpigot]
+commands:
+    coins:
+    help:
+    aide:
+    ?:
+    rank:
+    broadcast:
+      aliases: [bc]
+    plugins:
+    plugin:
+    pl:
+    tp:
+    fly:
+    gamemode:
+      aliases: [gm]
+    mod:
+    hub:
