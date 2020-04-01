@@ -226,7 +226,7 @@ public class SQLMain {
 	}
 
 	
-	//MOVED TO BUNGEE
+	////////////////////////////////////////MOVED TO BUNGEE
 	public void setGameState(Player player, String newGameState) {
 		connexion();
 		try {
@@ -282,7 +282,7 @@ public class SQLMain {
 		}
 		return null;
 	}
-	//MOVED TO BUNGEE
+		////////////////////////////////////////MOVED TO BUNGEE
 	
 
 	public void setModMode(Player player, boolean newMode) {
@@ -375,6 +375,23 @@ public class SQLMain {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	
+	public int getPlayers(int servPort) {
+		connexion();
+		try {
+			PreparedStatement ps = connexion.prepareStatement("SELECT players FROM servers WHERE port = ?");
+			ps.setInt(1, servPort);
+			ResultSet rs = ps.executeQuery();
+			if (rs.next()) {
+				return rs.getInt("players");
+			}
+			return 0;
+		} catch (SQLException ex) {
+			ex.printStackTrace();
+		}
+		return 0;
 	}
 	
 	public ArrayList<String> getServers(String type) {
