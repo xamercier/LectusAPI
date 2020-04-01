@@ -15,7 +15,7 @@ public enum GameManager {
 			20,
 			"hub_",
 			"xamercier",
-			new LectusItem(ItemStackUtils.create(Material.BED, (byte) 0, 1, ChatColor.RED + "Hub", null)),
+			new LectusItem(ItemStackUtils.create(Material.ENDER_PEARL, (byte) 0, 1, ChatColor.GREEN + "Hub", null)),
 			""	),
 	HikaBrain1v1(true,
 			"HikaBrain1v1",
